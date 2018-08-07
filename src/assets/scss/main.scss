@@ -1,0 +1,112 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'type.scss';
+@import 'layout.scss';
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Maison Neue', sans-serif;
+}
+
+
+.card{
+  background-color: $accent;
+  position: relative;
+
+
+  .card-content{
+    padding: 1rem 1rem;
+
+    @media (min-width: $small) {
+      padding: 1.5rem 2rem ;
+    }
+    
+    @media (min-width: $mid) {
+      padding: 2rem 3rem ; 
+    }
+    
+    @media (min-width: $big) {
+      padding: 3rem 4rem;
+    }
+  }
+
+  .card-content.compact{
+    padding: 1rem 1rem;
+
+    @media (min-width: $small) {
+      padding: 1.5rem 2rem ;
+    }
+    
+    @media (min-width: $mid) {
+      padding: 2rem 2rem ; 
+    }
+    
+    @media (min-width: $big) {
+      padding: 2rem 2rem;
+    }
+  }
+}
+
+.image{
+  background-color: $primary;
+}
+
+.shadow:before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: inherit;
+  opacity: 0.32;
+  z-index: 0;
+  transform: translate3d(-0.5rem, 0.5rem, -1px);
+  
+  @media (min-width: 860px) {
+    transform: translate3d(-1rem, 1rem, 0px);
+  }
+}
+
+
+.background-secondary{
+  background-color: $background-secondary;
+}
+
+.background-dark{
+  background-color: $text-primary;
+
+  // *{
+  //   color: #fff;
+  // }
+
+  // .image {
+  //   background-color: #fff;
+  // }
+}
+
+.inverse, .inverse *{
+  color: #fff;
+}
+
+
+
+
+.scroller{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 1rem;
+}
+
+.scroller-content{
+  white-space: nowrap;
+
+  > .cell{
+    display: inline-block;
+    width: auto;
+  }
+}
