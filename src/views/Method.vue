@@ -1,79 +1,80 @@
 <template>
   <div id="work">
     <section class="v-padded background-dark">
-      <div class="row inverse">
-        <div class="cell">
-          <h1>Our method combines strategy & action, building tangible evidence based outcomes.</h1>
-        </div>
-        <div class="cell s-two-thirds">
-          <p>We rely on a fast cadence of hypothesis driven testing with real prototypes to lower uncertainty. This builds actionable insights, while simultaneously generating business outcomes. </p>
-        </div>
-      </div>
-
-      <div class="row horizontal" id="science">
-
-        <div class="l-two-thirds v-padded-small">
+      <div class="container">
+        <div class="row inverse">
           <div class="cell">
-            <div class="card shadow">
-              <div class="card-content">
+            <h1>Our method combines strategy & action, building tangible evidence based outcomes.</h1>
+          </div>
+          <div class="cell s-two-thirds">
+            <p>We rely on a fast cadence of hypothesis driven testing with real prototypes to lower uncertainty. This builds actionable insights, while simultaneously generating business outcomes. </p>
+          </div>
+        </div>
 
-                <div class="stat">
-                  <h2>4,500+ hours of lab testing</h2>
-                  <p class="small">We test and iterate with small groups at least once a sprint to ensure constant feedback.</p>
+        <div class="row horizontal" id="science">
+
+          <div class="l-two-thirds v-padded-small">
+            <div class="cell">
+              <div class="card shadow">
+                <div class="card-content">
+
+                  <div class="stat">
+                    <h2>4,500+ hours of lab testing</h2>
+                    <p class="small">We test and iterate with small groups at least once a sprint to ensure constant feedback.</p>
+                  </div>
+
+                  <div class="stat">
+                    <h2>38,000+ hours of real world data</h2>
+                    <p class="small">We prototype & pilot in real world situations to ensure we’re solving real problems.</p>
+                  </div>
+
+                  <div class="stat">
+                    <h2>1,200+ hours  of expert interviews</h2>
+                    <p class="small">We engage industry experts to quickly gain a deep & nuanced understanding of the problem.</p>
+                  </div>
+
                 </div>
-
-                <div class="stat">
-                  <h2>38,000+ hours of real world data</h2>
-                  <p class="small">We prototype & pilot in real world situations to ensure we’re solving real problems.</p>
-                </div>
-
-                <div class="stat">
-                  <h2>1,200+ hours  of expert interviews</h2>
-                  <p class="small">We engage industry experts to quickly gain a deep & nuanced understanding of the problem.</p>
-                </div>
-
               </div>
+            </div>
+          </div>
+
+          <div class="inverse l-third horizontal v-padded-small">
+            <div class="cell xs-full s-half l-full">
+              <h3>Improving Wellness & Wellbeing</h3>
+              <p class="small">We’ve learnt how to reliably improve wellbeing across finance, fitness, mental health, and sleep.</p>
+            </div>
+
+            <div class="cell xs-full s-half l-full">
+              <h3>Fostering Institutional Trust</h3>
+              <p class="small">We’ve seen how we can generate trust in banks, government, & educational institutions.</p>
+            </div>
+
+            <div class="cell xs-full s-half l-full">
+              <h3>Driving Behaviour Change</h3>
+              <p class="small">We’ve learnt how to sustain behaviour change across fitness, finance, mental health, education, & governement.</p>
+            </div>
+
+            <div class="cell xs-full s-half l-full">
+              <h3>Harnessing Emergent Technology</h3>
+              <p class="small">We’ve seen how to appropriately leverage new tech in entertainment, productivity, retail, government, and cultural institutions</p>
             </div>
           </div>
         </div>
 
-        <div class="inverse l-third horizontal v-padded-small">
-          <div class="cell xs-full s-half l-full">
-            <h3>Improving Wellness & Wellbeing</h3>
-            <p class="small">We’ve learnt how to reliably improve wellbeing across finance, fitness, mental health, and sleep.</p>
+        <div class="row horizontal" id="images">
+          <div id="image-one" class="v-padded s-two-thirds m-half">
+            <div class="fixed-aspect square">
+              <div class="fixed-aspect-inner image"></div>
+            </div>
           </div>
 
-          <div class="cell xs-full s-half l-full">
-            <h3>Fostering Institutional Trust</h3>
-            <p class="small">We’ve seen how we can generate trust in banks, government, & educational institutions.</p>
-          </div>
-
-          <div class="cell xs-full s-half l-full">
-            <h3>Driving Behaviour Change</h3>
-            <p class="small">We’ve learnt how to sustain behaviour change across fitness, finance, mental health, education, & governement.</p>
-          </div>
-
-          <div class="cell xs-full s-half l-full">
-            <h3>Harnessing Emergent Technology</h3>
-            <p class="small">We’ve seen how to appropriately leverage new tech in entertainment, productivity, retail, government, and cultural institutions</p>
+          <div id="image-two" class="xs-two-thirds m-third v-padded">
+            <div class="fixed-aspect four-three">
+              <div class="fixed-aspect-inner image"></div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="row horizontal" id="images">
-        <div id="image-one" class="v-padded s-two-thirds m-half">
-          <div class="fixed-aspect square">
-            <div class="fixed-aspect-inner image"></div>
-          </div>
-        </div>
-
-        <div id="image-two" class="xs-two-thirds m-third v-padded">
-          <div class="fixed-aspect four-three">
-            <div class="fixed-aspect-inner image"></div>
-          </div>
-        </div>
-      </div>
-
     </section>
 
     <section class="v-padded">

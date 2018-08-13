@@ -16,7 +16,7 @@ body {
 .card{
   background-color: $accent;
   position: relative;
-
+  z-index: 3;
 
   .card-content{
     padding: 1rem 1rem;

@@ -71,7 +71,7 @@ export default {
         transform: translate3d(50%, 0rem, 0rem);
       }
 
-      @media (min-width: $big) {
+      @media (min-width: $mid) {
         transform: translate3d(0%, 0%, 0rem);
       }
     }
