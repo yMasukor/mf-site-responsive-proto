@@ -1,6 +1,6 @@
 <template>
   <div id="work">
-    <section class="v-padded">
+    <section class="v-padded container">
 
       <div class="row horizontal">
         <h1 class="cell">Some of our work.</h1>
@@ -21,14 +21,14 @@
       </div>
     </section>
 
-    <section class="v-padded">
+    <section class="v-padded container">
 
       <div class="row horizontal">
         <h2 class="cell">Other stuff</h2>
       </div>
 
-      <div id="extra">
-        <div class="scroller l-third">
+      <div id="extra" class="row">
+        <!-- <div class="scroller l-third">
           <div class="scroller-content row">
             <div v-for="(otherWork, index) in otherWorks" :key="`other-work-${index}`" class="cell older-work-title">
               <h4>Older Work {{index}}</h4>
@@ -40,7 +40,20 @@
           <div class="fixed-aspect four-three">
             <div class="fixed-aspect-inner image"></div>
           </div>
+        </div> -->
+
+
+        <div v-for="(otherWork, index) in otherWorks" :key="`other-work-${index}`" class="cell older-work-title" @click="activeIndex = index">
+          <h4>Older Work {{index}}</h4>
+          <div class="extra-image" :class="{active: activeIndex === index}">
+            <div class="fixed-aspect four-three" >
+              <div class="fixed-aspect-inner image">
+                <h1>Image {{index}}</h1>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
 
     </section>
@@ -55,7 +68,8 @@ export default {
   data () {
     return {
       works: [...Array(5)],
-      otherWorks: [...Array(12)]
+      otherWorks: [...Array(12)],
+      activeIndex: 0
     }
   }
 }
@@ -97,31 +111,60 @@ export default {
   }
 
   #extra{
-    .scroller-content{
-      @media (min-width: $big) {
-        white-space: auto;
+    position: relative;
+    .extra-image{
+      display: none;
 
-        > .cell{
-          display: block;
-          width: auto;
-        }
+      &.active{
+        display: block;
       }
     }
 
-    .row{
-      @media (min-width: $big) {
-        padding: 0px;
+    @media (min-width: $mid) {
+      .extra-image{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 66.66%;
+        padding-left: 2rem;
+        padding-right: 2rem;
       }
-    }
+    } 
 
     @media (min-width: $big) {
-      padding-left: 4rem;
-      padding-right: 4rem;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+      .extra-image{
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+    } 
   }
+
+  // #extra{
+  //   .scroller-content{
+  //     @media (min-width: $big) {
+  //       white-space: auto;
+
+  //       > .cell{
+  //         display: block;
+  //         width: auto;
+  //       }
+  //     }
+  //   }
+
+  //   .row{
+  //     @media (min-width: $big) {
+  //       padding: 0px;
+  //     }
+  //   }
+
+  //   @media (min-width: $big) {
+  //     padding-left: 4rem;
+  //     padding-right: 4rem;
+  //     display: flex;
+  //     flex-direction: row;
+  //     flex-wrap: wrap;
+  //   }
+  // }
 
 
 </style>

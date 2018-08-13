@@ -15,7 +15,7 @@ export default {
   props: {
     aspect: String,
     captionPos: String,
-    captionWidth: String
+    captionSize: String
   }
 }
 </script>
